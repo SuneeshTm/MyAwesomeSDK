@@ -13,12 +13,3 @@ public struct MyAwesomeSDK {
         print("SDK configured with options: \(options)")
     }
 }
-
-// Export all public components
-//@_exported import struct MyAwesomeSDK.CustomButton
-//@_exported import class MyAwesomeSDK.DataManager
-
-#if canImport(UIKit)
-@_exported import class MyAwesomeSDK.CustomUIView
-@_exported import struct MyAwesomeSDK.CustomUIViewRepresentable
-#endif
